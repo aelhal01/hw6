@@ -3,11 +3,12 @@
   padding: 10px;
   margin: auto;
   font-family: serif;
+  background: #FEF1D5;
 }
 .content h1 {
     display: block;
     width: 50vh;
-    background: #fff;
+    background: transparent;
     text-transform: uppercase;
     color: rgb(238, 105, 16);
 }
@@ -27,8 +28,8 @@
 }
 .content button {
   text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
+  color: rgb(238, 105, 16);
+  border: 1px solid rgb(238, 105, 16);
   padding: 12px 34px;
   font-size: 13px;
   background: transparent;
@@ -36,7 +37,7 @@
   cursor: pointer;
 }
 .content button:hover {
-  border: 1px solid rgb(238, 105, 16);
+  border: 1px solid #E35707;
   background: rgb(238, 105, 16);
   color: white;
   transition: 1s;
