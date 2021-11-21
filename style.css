@@ -7,33 +7,34 @@ body {
   height: 100vh;
   width: 100%;
 }
-h1, h2, h3, button {
-  float: right;
-  margin: 0 2%;
-  padding-bottom: 20px;
+
+.content{
+  text-align: center;
+  padding: 10px;
+  margin: auto;
 }
-h1 {
+.content h1 {
     display: block;
     width: 50vh;
     background: #fff;
     text-transform: uppercase;
     color: rgb(238, 105, 16);
 }
-h2 {
+.content h2 {
   display: block;
   width: 50vh;
   background: transparent;
   color: #fff;
   text-shadow: 1px 1px black;
 }
-h3 {
+.content h3 {
   display: block;
   padding 10px;
   width: 35vh;
   background: #fff;
   color: black;
 }
-button {
+.content button {
   text-decoration: none;
   color: #fff;
   border: 1px solid #fff;
@@ -43,7 +44,7 @@ button {
   position: relative;
   cursor: pointer;
 }
-button:hover {
+.content button:hover {
   border: 1px solid rgb(238, 105, 16);
   background: rgb(238, 105, 16);
   color: white;
