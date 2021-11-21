@@ -3,23 +3,34 @@ body {
   margin: auto;
   padding: 20px;
   font-family: Verdana, sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(background.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 h1 {
     display: block;
-    background: rgb(238, 105, 16);
+    width: 50vh;
+    background: #fff;
     text-transform: uppercase;
-    color: #fff;
+    color: rgb(238, 105, 16);
 }
 h2 {
-    color: black;
+    color: #fff;
+    text-shadow: 1px 1px black;
 }
 h3 {
-    color:rgb(253, 21, 21);
+  display: block;
+  width: 35vh;
+  background: #fff;
+  color: black;
 }
 button {
   text-decoration: none;
-  color: rgb(238, 105, 16);
-  border: 1px solid rgb(238, 105, 16);
+  color: #fff;
+  border: 1px solid #fff;
   padding: 12px 34px;
   font-size: 13px;
   background: transparent;
