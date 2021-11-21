@@ -2,13 +2,13 @@ body {
   text-align: center;
   margin: auto;
   padding: 20px;
+  font-family: Verdana, sans-serif;
 }
 h1 {
     display: block;
-    background: #;
+    background: rgb(238, 105, 16);
     text-transform: uppercase;
-    color: rgb(238, 105, 16);
-    font-family: Verdana, sans-serif;
+    color: #fff;
 }
 h2 {
     color: black;
