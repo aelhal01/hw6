@@ -1,5 +1,5 @@
 body {
-  text-align: right;
+  text-align: center;
   padding: 20px;
   font-family: Verdana, sans-serif;
   min-height: 100vh;
@@ -9,8 +9,12 @@ body {
   background-size: cover;
   position: relative;
 }
+h1, h2, h3, button {
+  margin-right: 25px;
+}
 h1 {
     display: block;
+    padding: 10px;
     width: 50vh;
     background: #fff;
     text-transform: uppercase;
