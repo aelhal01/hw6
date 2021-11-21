@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <h1>Amicable Numbers Calculator</h1>
+    <h2>- How to use -</h2>
+    <p>Enter two numbers and press the button!</p>
+
+    <input type="text" id="n1"></input><br><br>
+    <input type="text" id="n2"></input><br><br>
+
+    <button onclick="calc()">Calculate amicability</button>
+
+    <div><h3 id="result"></h3></div>
+
+</body>
+
+
+<script type="text/javascript">
+
+//Calculates the amicability of two numbers
+function amicability()
+{
+    var num1 = document.getElementById("num1").value;
+    var num2 = document.getElementById("num2").value;
+
+    var amicable = false;
+
+    var fNum1 = find_factors(num1);
+    var fNum2 = find_factors(num2);
+
+    var sumNum1 = find_sum(fNum1);
+    var sumNum2 = find_sum(fNum2);
+
+    if (sumNum1 == num2 && sumNum2 == num1) {
+        amicable = true;
+    }
+
+    if(amicable) {
+        document.getElementById("result").innerHTML = "The numbers: " + num1 + " and " + num2 + " are amicable" ;
+    } else {
+        document.getElementById("result").innerHTML = "The numbers: " + num1 + " and " + num2 + " are not amicable" ;
+    }
+
+    alert("Factors of " + num1 + ": " + fNum1.join(" - ") + "\r\n" + "Factors of " + num2 + ": " + fNum2.join(" - "));
+}
+
+//Determines whether i is a factor of number
+function isAFactor(i, number)
+{
+    if(number % i == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+//Finds the factors of a number and stors them in an array
+function find_factors(number)
+{
+    var temp_factors = [];
+    for(i = 0; i < number; i++) {
+        if (isAFactor(i, number)) {
+            temp_factors.push(i);
+        }
+    }
+    return temp_factors;
+}
+
+//Finds the sum of an array of numbers
+function find_sum(array_num)
+{
+    var sum = array_num.reduce(add, 0);
+    return sum;
+}
+
+//Calculates the sum of 2 numbers
+function add(c_sum, a)
+{
+    return c_sum + a;
+}
+
+</script>
+</html>
