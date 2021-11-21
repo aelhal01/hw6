@@ -10,6 +10,7 @@ body {
   position: relative;
 }
 h1, h2, h3, button {
+  margin-top: 150px;
   margin-right: 25px;
 }
 h1 {
